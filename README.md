@@ -1,1 +1,1 @@
-# fpu_single_precision
+This is an educational project aimed at exploring the pipelined architecture of processors. The project was inspired by early mathematical coprocessors (FPUs), such as the Intel 8087, which used a register stack to store operands. The pipelined architecture in this project includes the main stages: instruction decoding, operand selection, operation execution, and writing results to memory.<img width="837" height="646" alt="image" src="https://github.com/user-attachments/assets/67f42b40-6b55-4390-a547-42d17871546f" />
