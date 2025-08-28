@@ -31,6 +31,23 @@ The processor can perform the following operations:
 ### Instruction Set
 The complete list of instructions is shown below:
 
-<img width="785" height="550" alt="Instruction Set" src="https://github.com/user-attachments/assets/dc3a58ec-85cb-4c22-94f1-bd926b5674ad" />
+0000: ST(0)=ST(0)+ST(1) ++TOP  comand:00000000
+0001: ST(0)=ST(0)+[RAM] ++TOP  comand:00000001 16-bit-mmr
+0010: ST(a)=ST(a)+ST(0)        comand:00000010 3-bit(a) 00000                      
+
+0011: ST(0)=ST(0)-ST(1) ++TOP  comand:00000011
+0100: ST(0)=ST(0)-[RAM] ++TOP  comand:00000100 16-bit-mmr
+0101: ST(a)=ST(a)-ST(0)        comand:00000101 3-bit(a) 00000
+
+0110: ST(0)=ST(0)*ST(1) ++TOP  comand:00000110
+0111: ST(0)=ST(0)*[RAM] ++TOP  comand:00000111 16-bit-mmr
+1000: ST(a)=ST(a)*ST(0)        comand:00001000 3-bit(a) 00000
+
+1001: ST(0)=ST(0) ++TOP comand:00001001
+1010: ST(0)=[RAM] ++TOP comand:00001010 16-bit-mmr
+1011: ST(0)=ST(a) ++TOP comand:00001011 3-bit(a) 00000
+
+1100: [RAM]=ST(0) comand:00001100 16-bit-mmr
+1101: ST(a)=ST(0) comand:00001101 3-bit(a) 00000
 
 ---
